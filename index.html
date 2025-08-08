@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koad Bistro</title>
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="style/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <img src="img/preloader/Fading circles.gif" alt="" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="">
+            <img src="img/logo.png" alt="" />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#mynav"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="navbar-nav mx-auto nav-links">
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown" data-toggle="dropdown"
+                >Home <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Home Default</a>
+                <a href="" class="dropdown-item">Home Version 2</a>
+                <a href="" class="dropdown-item">Home Version 3</a>
+              </div>
+            </li>
+            <li class="dropdown nav-item">
+              <a href="#" class="nav-link" data-toggle="dropdown">
+                Menu<i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Menu Style 1</a>
+                <a class="dropdown-item" href="#">Menu Style 2</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown"
+                >Pages <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">About Us</a>
+                <a href="" class="dropdown-item">Reservation</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link" data-toggle="dropdown"
+                >News <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Blog Page</a>
+                <a href="" class="dropdown-item">Single Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link" data-toggle="dropdown"
+                >Contacts <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Contact 1</a>
+                <a href="" class="dropdown-item">Contact 2</a>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <button class="nav-button btn btn-outline-success">
+              Book a Table
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="first-section animate__animated animate__slideInDown">
+      <div
+        class="writeup"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        data-aos-easing="ease-out-cubic"
+      >
+        <h1 style="font-size: 3rem; font-weight: 900">
+          Try Our New <br />Burger Menu
+        </h1>
+        <span class="text-secondary" style="font-size: 22px; font-weight: 600"
+          >It's about good food and fresh ingredients.</span
+        >
+        <button class="view-menu-button btn">View Our Menu</button>
+      </div>
+    </div>
+    <div class="second-section">
+      <div
+        class="writeup"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        data-aos-easing="cubic"
+      >
+        <span
+          style="
+            font-size: 23px;
+            width: 50%;
+            color: rgb(179, 179, 179);
+            margin-bottom: 20px;
+          "
+          >Best Dish Of The Day</span
+        >
+        <h3 class="text-light" style="font-size: 3rem; font-weight: 900">
+          Hamburger & <br />
+          Sweet Potato Fries
+        </h3>
+        <span
+          class="text-success"
+          style="font-size: 3rem; font-weight: 900; width: 60%"
+          >$19.99</span
+        >
+        <button class="add-to-cart-button btn">Add To Cart</button>
+      </div>
+    </div>
+    <section class="popular-dishes-section">
+      <div class="container mt-5 mb-5">
+        <div class="section-header pt-5 mb-5">
+          <h2 style="font-size: 3rem; font-weight: 600">Popular Dishes</h2>
+          <span class="text-secondary" style="font-size: 19px"
+            >Try the delicious new dishes from our chef.</span
+          >
+        </div>
+        <div class="owl-wrapper">
+          <div class="owl-carousel owl-theme">
+            <div class="card" style="width: 100%">
+              <div class="card-image">
+                <img src="img/1.jpg" alt="" width="10%" />
+              </div>
+              <div class="card-content p-4">
+                <h4 style="font-weight: 600; font-size: 22px">
+                  Classic Havana Burger
+                </h4>
+                <span class="text-center"
+                  >Grilled beef patty,Turkey rashes, and burger relish.</span
+                >
+                <span class="item-price mb-4">$21.00</span>
+                <button class="add-to-cart btn">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-image">
+                <img src="img/2.jpg" alt="" width="10%" />
+              </div>
+              <div class="card-content p-4">
+                <h4 style="font-weight: 600; font-size: 22px">
+                  Buffalo Mozzarella
+                </h4>
+                <span class="text-center"
+                  >Grilled beef patty,Turkey rashes, and burger relish.</span
+                >
+                <span class="item-price mb-4">$24.50</span>
+                <button class="add-to-cart btn">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-image">
+                <img src="img/3.jpg" alt="" width="10%" />
+              </div>
+              <div class="card-content p-4">
+                <h4 style="font-weight: 600; font-size: 22px">
+                  Cheese Royale Burger
+                </h4>
+                <span class="text-center"
+                  >Grilled beef patty,Turkey rashes, and burger relish.</span
+                >
+                <span class="item-price mb-4">$18.40</span>
+                <button class="add-to-cart btn">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-image">
+                <img src="img/4.jpg" alt="" width="10%" />
+              </div>
+              <div class="card-content p-4 text-center align-content-center">
+                <h4 style="font-weight: 600; font-size: 22px">
+                  Spaghetti Carbonara
+                </h4>
+                <span class="text-center"
+                  >Grilled beef patty,Turkey rashes, and burger relish.</span
+                >
+                <span class="item-price mb-4">$19.42</span>
+                <button class="add-to-cart btn">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-image">
+                <img src="img/5.jpg" alt="" width="10%" />
+              </div>
+              <div class="card-content p-4">
+                <h4 style="font-weight: 600; font-size: 22px">
+                  Buffalo Mozzarella
+                </h4>
+                <span class="text-center"
+                  >Grilled beef patty,Turkey rashes, and burger relish.</span
+                >
+                <span class="item-price mb-4">$26.00</span>
+                <button class="add-to-cart btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <div class="services">
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="services-box col-lg-3 col-md-6 col-sm-12">
+            <img src="img/icon1.png" alt="" />
+            <h3>Fresh Ingredients</h3>
+            <span
+              >Sed egestas, ante vulputa eros pede vitae luctus metus
+              augue.</span
+            >
+          </div>
+          <div class="services-box col-lg-3 col-md-6 col-sm-12">
+            <img src="img/icon2 (1).png" alt="" />
+            <h3>Best Recipe</h3>
+            <span
+              >Sed egestas, ante vulputa eros pede vitae luctus metus
+              augue.</span
+            >
+          </div>
+          <div class="services-box col-lg-3 col-md-6 col-sm-12">
+            <img src="img/icon3 (1).png" alt="" />
+            <h3>Happy Clients</h3>
+            <span
+              >Sed egestas, ante vulputa eros pede vitae luctus metus
+              augue.</span
+            >
+          </div>
+          <div class="services-box col-lg-3 col-md-6 col-sm-12">
+            <div class="pt-3">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <h3>Good Reviews</h3>
+            <span
+              >Sed egestas, ante vulputa eros pede vitae luctus metus
+              augue.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="reservation-section">
+      <h1 class="text-light" style="font-size: 50px; font-weight: 600">
+        Book a Table
+      </h1>
+      <span style="font-size: 25px; width: 70%; color: rgb(179, 179, 179)"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error,
+        dolores odio libero rerum fuga esse dicta ex iure corporis minima fugiat
+        molestias magni quam saepe optio quo nulla quibusdam.</span
+      >
+      <button class="reservation-button mb-1 btn">Reservation</button>
+    </section>
+    <div class="pizza-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="img/ab1.jpg" alt="" width="90%" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div>
+              <h1 class="menu-title">Pizza</h1>
+              <hr />
+              <ul class="menu-list">
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th1@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Oakey Smokey Pizza</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th2@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Oakey Smokey Pizza</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th3@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Oakey Smokey Pizza</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th4@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Oakey Smokey Pizza</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th5@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Oakey Smokey Pizza</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pasta-menu py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div>
+              <h1 class="menu-title">Pasta</h1>
+              <hr />
+              <ul class="menu-list">
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th6@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Spaghetti all’Amatriciana</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th7@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Spaghetti Carbonara</span>
+                      <span class="item-price">$24.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th8@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Lasagna</span>
+                      <span class="item-price">$22.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="img/ab2.jpg" alt="" width="90%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="burger-menu py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="img/ab3.jpg" alt="" width="90%" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div>
+              <h1 class="menu-title">Burger</h1>
+              <hr />
+              <ul class="menu-list">
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th10@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name"
+                        >The Double Barrel Meat Feast</span
+                      >
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th11@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name"> Classic Havana Burger</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+                <li class="menu-items">
+                  <div>
+                    <img src="img/th12@2x.jpg" alt="" width="50%" />
+                  </div>
+                  <div class="item-info-container">
+                    <h2 class="item-info">
+                      <span class="item-name">Single BBQ Chicken Burger</span>
+                      <span class="item-price">$21.00</span>
+                    </h2>
+                    <p class="ingredients text-secondary">
+                      Smoke mozzarella, basil and picorino Romano
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="testimonial-section py-5">
+      <div class="testimonial-heading">
+        <h1>Testimonials</h1>
+        <p>What They Say About Us</p>
+      </div>
+      <div class="container testimonial-container">
+        <div class="owl-carousel owl-theme">
+          <div class="testimonial">
+            <img
+              src="img/test1.jpg"
+              alt=""
+              style="width: 60px; display: inline-block"
+            />
+            <h5>John Doe</h5>
+            <p class="text-secondary">Chef</p>
+            <p>
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nisi soluta, nulla inventore voluptates vitae fugit
+              voluptatum possimus sequi ex laborum illum, asperiores quod esse
+              neque ea eveniet repellat rem."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="img/test3.jpg"
+              alt=""
+              style="width: 60px; display: inline-block"
+            />
+            <h5>Mary Li</h5>
+            <p class="text-secondary">Chef</p>
+            <p>
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nisi soluta, nulla inventore voluptates vitae fugit
+              voluptatum possimus sequi ex laborum illum, asperiores quod esse
+              neque ea eveniet repellat rem."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="img/test2.jpg"
+              alt=""
+              style="width: 60px; display: inline-block"
+            />
+            <h5>Ete-ten Pishka</h5>
+            <p class="text-secondary">Chef</p>
+            <p>
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nisi soluta, nulla inventore voluptates vitae fugit
+              voluptatum possimus sequi ex laborum illum, asperiores quod esse
+              neque ea eveniet repellat rem."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="img/test1.jpg"
+              alt=""
+              style="width: 60px; display: inline-block"
+            />
+            <h5>John Doe</h5>
+            <p class="text-secondary">Chef</p>
+            <p>
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nisi soluta, nulla inventore voluptates vitae fugit
+              voluptatum possimus sequi ex laborum illum, asperiores quod esse
+              neque ea eveniet repellat rem."
+            </p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="img/test3.jpg"
+              alt=""
+              style="width: 60px; display: inline-block"
+            />
+            <h5>Mary Li</h5>
+            <p class="text-secondary">Chef</p>
+            <p>
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nisi soluta, nulla inventore voluptates vitae fugit
+              voluptatum possimus sequi ex laborum illum, asperiores quod esse
+              neque ea eveniet repellat rem."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row no-gutters">
+      <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+        <img
+          class="img-fluid sample-image"
+          src="img/1 (1).jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+        <img
+          class="img-fluid sample-image"
+          src="img/2 (1).jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+        <img
+          class="img-fluid sample-image"
+          src="img/3 (1).jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+        <img
+          class="img-fluid sample-image"
+          src="img/4 (1).jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+    </div>
+    <section class="news-section">
+      <div class="news-heading">
+        <h1>Latest News</h1>
+        <p class="text-secondary">Promotion in a Cafe</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/1 (2).jpg" alt="" width="100%" />
+              </div>
+              <div class="card-content p-5">
+                <h3>
+                  <a href="">Improved Cappuccino Recipe</a>
+                </h3>
+                <p>
+                  Donec nec justo eget felis facilisis fermentum. Aliquam
+                  porttitor mauris sit amet orci. Aenean dignissim pellente
+                  squefelis.
+                </p>
+                <hr />
+                <p>
+                  <span>25.07.2025</span> |
+                  <a href="">2 comments</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/2 (2).jpg" alt="" width="100%" />
+              </div>
+              <div class="card-content p-5">
+                <h3>
+                  <a href="">Best Minimalistic Decor.</a>
+                </h3>
+                <p>
+                  Donec nec justo eget felis facilisis fermentum. Aliquam
+                  porttitor mauris sit amet orci. Aenean dignissim pellente
+                  squefelis.
+                </p>
+                <hr />
+                <p>
+                  <span>25.07.2025</span> |
+                  <a href="">4 comments</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/3 (2).jpg" alt="" width="100%" />
+              </div>
+              <div class="card-content p-5">
+                <h3>
+                  <a href="" class="">Updated Terms & Conditions</a>
+                </h3>
+                <p>
+                  Donec nec justo eget felis facilisis fermentum. Aliquam
+                  porttitor mauris sit amet orci. Aenean dignissim pellente
+                  squefelis.
+                </p>
+                <hr />
+                <p>
+                  <span>25.07.2025</span> |
+                  <a href="">36 comments</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="news-button mb-5 btn">View All News</button>
+    </section>
+    <div class="footer p-2">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="img/logo.png" alt="" class="mb-3" />
+            <p>
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+              mauris sit amet orci. Aenean dignissim pellente squefelis.
+            </p>
+            <p>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p style="font-size: 22px; font-weight: 600">Newsletter</p>
+            <p>
+              Subscribe to our newsletter to stay Up to Date with our Latest
+              News
+            </p>
+
+            <div class="search-input">
+              <input type="email" placeholder="Enter you email" class="input" />
+              <button class="subscribe-button">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p style="font-size: 22px; font-weight: 600">How To Find Us</p>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Hadiza Plaza,
+              Market Road,Abuja
+            </p>
+
+            <p>
+              <i class="fa fa-phone" aria-hidden="true"></i> +234 (0)801 987
+              3622
+            </p>
+            <p>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i
+              >koadbistro@yahoomail.com
+            </p>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7708.189069202525!2d7.334506228989544!3d9.135156642971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd964db49d7f5%3A0x2a0fb4da70963934!2sKaniz%20Estates!5e0!3m2!1sen!2sng!4v1753717102722!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="d-flex justify-content-between">
+          <p>Copyright &copy;2025 Koad Bistro. All rights reserved.</p>
+          <a href="#" class="text-dark text-decoration-none">Back To Top</a>
+        </div>
+      </div>
+
+      <div></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      setTimeout(
+        () => (document.getElementById('preloader').style.display = 'none'),
+        1000
+      );
+    </script>
+    <script src="style/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 30,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              // For screens 0px to 767px
+              items: 1,
+            },
+            768: {
+              // For screens 768px to 991px
+              items: 2,
+            },
+            992: {
+              // For screens 992px and up
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <script src="style/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/68879b8b487057192064238a/1j18rf6kr';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

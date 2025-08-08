@@ -1,0 +1,317 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Zilla Slab', serif;
+}
+h2,
+h1 {
+  margin: 0;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 85%;
+  background-color: rgb(240, 240, 240);
+  height: 1px;
+}
+h3 a,
+p a {
+  color: black;
+  transition: 0.3s;
+}
+h3 a:hover,
+p a:hover {
+  text-decoration: none;
+}
+.preloader {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+}
+.add-to-cart {
+  border: solid 1px;
+  border-color: rgb(127, 192, 102);
+  height: 50px;
+  font-weight: 600;
+  background-color: white;
+  padding: 10px 40px 10px 40px;
+  transition: 0.3s;
+}
+.add-to-cart:hover {
+  background-color: rgb(127, 192, 102);
+  color: white;
+}
+.first-section {
+  background-image: url(img/slide2.jpg);
+  min-height: 100vh;
+  background-position: center;
+  align-content: center;
+}
+.navbar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 13%;
+  z-index: 999;
+}
+.second-section {
+  background-image: url(img/slide3.jpg);
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.popular-dishes-section {
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 130vh;
+  margin-bottom: 8%;
+}
+.section-header {
+  text-align: center;
+}
+.writeup {
+  margin-left: 10%;
+}
+.view-menu-button,
+.add-to-cart-button,
+.reservation-button {
+  border: solid 1px;
+  border-color: rgb(127, 192, 102);
+  height: 50px;
+  font-weight: 600;
+  background-color: rgb(127, 192, 102);
+  color: white;
+  padding: 10px 40px 10px 40px;
+  transition: 0.3s;
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.view-menu-button:hover,
+.add-to-cart-button:hover,
+.reservation-button:hover {
+  background-color: white;
+  color: rgb(127, 192, 102);
+  border: none;
+}
+.reservation-section {
+  background-image: url(img/ban2.jpg);
+  background-position: center;
+  padding: 20px;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pizza-menu {
+  background-image: url(img/ban3.jpg);
+  background-position: center;
+  min-height: 90vh;
+  margin-top: 80px;
+}
+.pasta-menu {
+  background-image: url(img/ban4.jpg);
+  background-position: center;
+  min-height: 90vh;
+  margin-top: 80px;
+}
+.burger-menu {
+  background-image: url(img/ban5.jpg);
+  background-position: center;
+  min-height: 90vh;
+  margin-top: 80px;
+}
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
+  --animate-delay: 5s;
+}
+.menu-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.menu-list {
+  padding: 0;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.item-info {
+  padding-bottom: 10px;
+}
+.item-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.item-price {
+  font-size: 20px;
+  color: rgb(127, 192, 102);
+  font-weight: 700;
+}
+.ingredients {
+  font-size: 18px;
+}
+.nav-item {
+  margin: 20px;
+  font-size: 18px;
+}
+.nav-link:hover {
+  color: rgb(127, 192, 102);
+}
+.dropdown-menu {
+  margin-top: 1px;
+  border: none;
+  border-top: solid 3px rgb(127, 192, 102);
+  padding: 0;
+}
+.dropdown-item {
+  padding: 15px;
+  padding-right: 60px;
+  border: none;
+  border-top: solid 1px grey;
+  font-size: 18px;
+}
+.card {
+  border: none;
+  margin-bottom: 50px;
+  background-color: rgb(241, 241, 241);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+}
+.services-box {
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 40px;
+}
+.testimonial-section {
+  background-image: url(img/ban6.jpg);
+  min-height: 120vh;
+  background-size: cover;
+  margin-top: 80px;
+  padding-top: 80px;
+}
+.testimonial-heading {
+  text-align: center;
+}
+.testimonial-heading h1 {
+  font-weight: 600;
+}
+.testimonial-heading p {
+  color: grey;
+}
+.testimonial {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+.testimonial img {
+  border-radius: 60px;
+  text-align: center;
+}
+.testimonial h5 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.testimonial-container {
+  margin-top: 80px;
+}
+.sample-image {
+  transition: 0.3s;
+}
+.sample-image:hover {
+  opacity: 0.9;
+}
+.news-section {
+  background-image: url(img/ban7.jpg);
+  min-height: 150vh;
+  text-align: center;
+  padding-top: 80px;
+}
+.news-section h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 45px;
+}
+.news-section p {
+  font-size: 18px;
+}
+.card-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-content a:hover {
+  color: rgb(127, 192, 102);
+}
+.news-heading {
+  margin-bottom: 40px;
+}
+.news-button {
+  border: solid 1px;
+  border-color: rgb(127, 192, 102);
+  padding: 10px 40px 10px 40px;
+  height: 50px;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+.news-button:hover {
+  background-color: rgb(127, 192, 102);
+}
+.footer {
+  height: 60vh;
+  font-family: sans-serif;
+}
+.footer i {
+  margin-right: 15px;
+}
+.fa-twitter:hover,
+.fa-whatsapp:hover,
+.fa-instagram:hover,
+.fa-snapchat-ghost:hover {
+  color: rgb(127, 192, 102);
+}
+.search-input {
+  display: flex;
+  position: relative;
+}
+.subscribe-button {
+  right: 0%;
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: rgb(127, 192, 102);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+  position: absolute;
+}
+.subscribe-button:hover {
+  opacity: 0.8;
+}
+input {
+  height: 40px;
+  border: solid 1px grey;
+  width: 100%;
+  padding-left: 10px;
+}
+.navbar-collapse {
+  background-color: white;
+}
