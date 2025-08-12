@@ -4,6 +4,10 @@ html {
 body {
   font-family: 'Zilla Slab', serif;
 }
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
 h2,
 h1 {
   margin: 0;
@@ -315,3 +319,4 @@ input {
 .navbar-collapse {
   background-color: white;
 }
+
