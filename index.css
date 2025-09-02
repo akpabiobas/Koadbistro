@@ -7,7 +7,6 @@ body {
 html, body {
    max-width: 100%;
    overflow-x: hidden;
-   overflow: hidden;
 }
 h2,
 h1 {
@@ -320,5 +319,6 @@ input {
 .navbar-collapse {
   background-color: white;
 }
+
 
 
