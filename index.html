@@ -11,7 +11,11 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link href="https://cdn.jsdelivr.net/npm/fontawesome-4.7@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href=" https://cdn.jsdelivr.net/npm/fontawesome-4.7@4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -24,19 +28,19 @@
     />
     <link
       rel="stylesheet"
-      href="owl.carousel.min.css"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="owl.theme.default.css"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
     />
   </head>
   <body>
     <div class="preloader" id="preloader">
-      <img src="25.svg" alt="" />
+      <img src="img/preloader/25.svg" alt="" />
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-brand">
           <a href="">
             <img src="img/logo.png" alt="" />
@@ -723,18 +727,24 @@
               Subscribe to our newsletter to stay Up to Date with our Latest
               News
             </p>
-
-            <form>
+            <form action="">
               <div class="search-input">
-                <input type="email" placeholder="Enter you email" class="input" />
-                <button class="subscribe-button" type="submit">Subscribe</button>
+                <input
+                  type="email"
+                  placeholder="Enter you email"
+                  class="input"
+                />
+                <button class="subscribe-button" type="submit">
+                  Subscribe
+                </button>
               </div>
             </form>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <p style="font-size: 22px; font-weight: 600">How To Find Us</p>
             <p>
-              <i class="fa fa-map-marker" aria-hidden="true"></i> Kaniz Estates, Karsana,Abuja
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Hadiza Plaza,
+              Market Road,Abuja
             </p>
 
             <p>
@@ -752,17 +762,26 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7708.189069202525!2d7.334506228989544!3d9.135156642971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd964db49d7f5%3A0x2a0fb4da70963934!2sKaniz%20Estates!5e0!3m2!1sen!2sng!4v1753717102722!5m2!1sen!2sng"
           width="100%"
-          height="350"
+          height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div class="d-flex justify-content-between">
-          <p style="font-size: 1rem;">Copyright &copy;2025 Koad Bistro. All rights reserved.</p>
-          <a href="#" class="text-dark text-decoration-none" style="font-size: 1rem;">Back To Top</a>
+          <p style="font-size: 1rem">
+            Copyright &copy;2025 Koad Bistro. All rights reserved.
+          </p>
+          <a
+            href="#"
+            class="text-dark text-decoration-none"
+            style="font-size: 1rem"
+            >Back To Top</a
+          >
         </div>
       </div>
+
+      <div></div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -784,7 +803,7 @@
         1000
       );
     </script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="style/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
@@ -811,7 +830,7 @@
         });
       });
     </script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="style/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
@@ -826,15 +845,20 @@
         s0.parentNode.insertBefore(s1, s0);
       })();
     </script>
+    <script>
+      const menu = document.querySelector('.menu');
+      const menuToggle = document.querySelector('.menuToggle');
+
+      menuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (window.getComputedStyle(menu).display === 'block') {
+          menu.style.display = 'none';
+        } else {
+          menu.style.display = 'block';
+        }
+      });
+    </script>
     <!--End of Tawk.to Script-->
   </body>
 </html>
-
-
-
-
-
-
-
-
-
