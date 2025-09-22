@@ -28,11 +28,15 @@
     />
     <link
       rel="stylesheet"
-      href="owl.carousel.min.css"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="owl.theme.default.css"
+      href="style/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0-beta.1/css/lightgallery-bundle.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -40,7 +44,7 @@
       <img src="img/preloader/25.svg" alt="" />
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-brand">
           <a href="">
             <img src="img/logo.png" alt="" />
@@ -594,38 +598,46 @@
         </div>
       </div>
     </section>
-    <div class="row no-gutters">
+    <div class="row no-gutters" id="animated-thumbnails">
       <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-        <img
-          class="img-fluid sample-image"
-          src="img/1 (1).jpg"
-          alt=""
-          class="img-fluid"
-        />
+        <a data-src="img/1 (1).jpg">
+          <img
+            class="img-fluid sample-image"
+            src="img/1 (1).jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
       </div>
       <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-        <img
-          class="img-fluid sample-image"
-          src="img/2 (1).jpg"
-          alt=""
-          class="img-fluid"
-        />
+        <a data-src="img/2 (1).jpg">
+          <img
+            class="img-fluid sample-image"
+            src="img/2 (1).jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
       </div>
       <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-        <img
-          class="img-fluid sample-image"
-          src="img/3 (1).jpg"
-          alt=""
-          class="img-fluid"
-        />
+        <a data-src="img/3 (1).jpg">
+          <img
+            class="img-fluid sample-image"
+            src="img/3 (1).jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
       </div>
       <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-        <img
-          class="img-fluid sample-image"
-          src="img/4 (1).jpg"
-          alt=""
-          class="img-fluid"
-        />
+        <a data-src="img/4 (1).jpg">
+          <img
+            class="img-fluid sample-image"
+            src="img/4 (1).jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
       </div>
     </div>
     <section class="news-section">
@@ -830,7 +842,7 @@
         });
       });
     </script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="style/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
@@ -860,7 +872,17 @@
       });
     </script>
     <!--End of Tawk.to Script-->
+    <!-- Start of lightbox script -->
+    <script src="
+      https://cdn.jsdelivr.net/npm/lightgallery@2.9.0-beta.1/lightgallery.umd.min.js
+    "></script>
+    <script>
+      lightGallery(document.getElementById('animated-thumbnails'), {
+        thumbnail: true,
+        selector: 'a',
+        dynamic: true,
+      });
+    </script>
+    <!-- End of Lightbox Script -->
   </body>
 </html>
-
-
